@@ -24,6 +24,7 @@ cp .env.example .env
 docker exec -it users-api-php vendor/bin/phpunit --testdox
 ```
 **Resultado dos Testes:**
+
 ![Alt text](https://i.ibb.co/Bn9ScG2/Captura-de-tela-de-2020-05-29-10-50-01.png"testes")
 
 **Foi adicionado CI utilizando o Google Cloud Plataform para rodar os tests toda vez que fizer um push**
