@@ -2,7 +2,6 @@ version: '3.4'
 services:
   users-api-php:
     container_name: users-api-php
-    entrypoint: dockerize -wait tcp://db:3306 -timeout 40s
     build:
       context: .
       dockerfile: users.Dockerfile
@@ -22,7 +21,7 @@ services:
       context: .
       dockerfile: mysql.Dockerfile
     ports:
-      - "3312:3306"
+      - "3306:3306"
     environment:
       - MYSQL_DATABASE=users
       - MYSQL_ROOT_PASSWORD=root
