@@ -59,7 +59,7 @@ class TransactionTest extends TestCase
             ->assertResponseStatus(200);
     }
 
-    public function testShowUserReturnNotFoundWhenDoesntExists()
+    public function testShowTransactionReturnNotFoundWhenDoesntExists()
     {
         $response = $this->get('/transactions/1');
         $response->assertResponseStatus(404);
