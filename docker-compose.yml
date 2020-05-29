@@ -29,7 +29,7 @@ services:
       context: .
       dockerfile: mysql.Dockerfile
     ports:
-      - "3310:3306"
+      - "3306:3306"
     environment:
       - MYSQL_DATABASE=users
       - MYSQL_ROOT_PASSWORD=root
